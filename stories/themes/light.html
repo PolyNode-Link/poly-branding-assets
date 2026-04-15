@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="global.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 50%, #f9a8d4 100%);
+            --bg-canvas: #f1f5f9;
+            --panel-bg: #ffffff;
+            --box-bg: #a77fc038;
+            --text-main: #1e293b;
+        }
+        .canvas { background: var(--panel-bg); }
+        .header { background: var(--primary-gradient); opacity: 0.95; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+        .pill { background: rgba(255,255,255,0.3); }
+        .body { background: var(--panel-bg); }
+        .message-box { background: var(--box-bg); box-shadow: 0 40px 80px rgba(0,0,0,0.05); }
+        .message-text { color: var(--text-main); }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <div class="header">
+            <div class="title">{{header}}</div>
+            <div class="pill">{{pill}}</div>
+        </div>
+        <div class="body">
+            <div class="message-box">
+                <div class="message-text">{{message}}</div>
+            </div>
+        </div>
+        <div class="footer-spacer"></div>
+    </div>
+</body>
+</html>
