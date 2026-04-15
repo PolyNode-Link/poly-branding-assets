@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/PolyNode-Link/poly-branding-assets/refs/heads/main/stories/themes/global.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            --bg-deep: #0f172a;
+            --panel-dark: #1e293b;
+        }
+        .canvas { background: var(--panel-dark); }
+        .header { background: var(--primary-gradient); }
+        .pill { background: rgba(0,0,0,0.25); }
+        .body { background: var(--panel-dark); }
+        .message-box { background: var(--bg-deep); box-shadow: 0 30px 60px rgba(0,0,0,0.4); }
+        .message-text { color: #f8fafc; }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <div class="header">
+            <div class="title">{{header}}</div>
+            <div class="pill">{{pill}}</div>
+        </div>
+        <div class="body">
+            <div class="message-box">
+                <div class="message-text">{{message}}</div>
+            </div>
+        </div>
+        <div class="footer-spacer"></div>
+    </div>
+</body>
+</html>
